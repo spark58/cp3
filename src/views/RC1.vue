@@ -27,21 +27,9 @@
         <div id='Instructions'>
           <p id='inp'>Instructions</p>
           <div id='cooking_format'>
-            <ol>
-              <li> Select a pie pan whose inside top dimension is at least 9", and whose height is at least 1 1/4". Preheat the oven to 350°F.</li>
-              <li> Make the crust by stirring together all of the crust ingredients, mixing until thoroughly combined.</li>
-              <li> Press the crumbs into the bottom and up the sides of the pie pan, making a thicker layer on the bottom than on the sides.</li>
-              <li> Make the filling by mixing together the room-temperature cream cheese and sugar until smooth. Mix in the eggs and vanilla, again mixing until smooth.
-                <br>To avoid beating too much air into the batter, use a mixer set at low-medium speed.
-                <br>To avoid lumps, make sure the cream cheese is softened, and/or at room temperature.</li>
-              <li> Set the pie pan onto a baking sheet, if desired; this makes it easier to transport in and out of the oven,
-                <br> and also protects the bottom of the crust from any potential scorching. Pour the filling into the crust.</li>
-              <li>Place the cheesecake in the oven. Bake it for 20 minutes, then add a crust shield; or shield the crust with strips of aluminum foil.
-                <br>Bake for an additional 10 minutes (for a total of about 30 minutes). A digital thermometer inserted into the filling 1" from the edge should read between 165°F and 170°F;
-                <br> the filling won't look entirely set in the center.</li>
-              <li>Remove the cheesecake from the oven, and set it on a rack to cool. Once the cake is cool, refrigerate it, covered, until you're ready to serve it.</li>
-              <li>Serve cheesecake in wedges, with fresh fruit if desired. Store any leftovers in the refrigerator for several days; freeze for longer storage.</li>
-            </ol>
+            <div id='idk_conatiner'>
+              <div class='idk' v-for="instruction in this.$root.$data.Instructions" :key="instruction.id"><ol><li>{{instruction.Instruction}}</li></ol></div>
+            </div>
           </div>
         </div>
       </div>
@@ -58,6 +46,16 @@ hr {
   margin: 5%;
 }
 
+.idk_conatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.idk {
+  text-align: left!important;
+  padding-left: 5%;
+}
+
 #cooking_format {
   display: flex;
   justify-content: space-around;
@@ -72,7 +70,7 @@ hr {
 #cooking_format ol {
   justify-content: center;
   display: inline-table;
-  list-style-type: lower-roman;
+  list-style-type: square;
 }
 
 #cooking_format li {
