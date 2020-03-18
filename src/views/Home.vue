@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img width="15%" alt="cooking" src="../assets/cake-pop.png">
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <div id="content">
+      <p>
+        Welcome to SY's Recipe</br>
+        Click on the link below to check out my recipes!
+      </p>
+      <router-link to="/RC1">Cheesecake</router-link></br>
+      <router-link to="/RC2">Fluffy French Toast</router-link>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// <script>
+// // @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+//
+// export default {
+//   name: 'Home',
+//   components: {
+//     HelloWorld
+//   }
+// }
+// </script>
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+<style>
+p {
+  font-size: 21px;
 }
-</script>
+
+#content a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #cc0066;
+}
+
+</style>
