@@ -6,15 +6,15 @@
       <div id="content1">
         <p id='inp'>Ingredients</p>
         <div id='cooking_format'>
-          <div id='crust'>Crust</br>
+          <div id='crust'>Crust<br>
             <ul>
-              <li>1 1/2 cups (128g) graham cracker crumbs (9 to 10 whole graham crackers, crushed)</br></li>
+              <li>1 1/2 cups (128g) graham cracker crumbs (9 to 10 whole graham crackers, crushed)<br></li>
               <li>1/4 cup (28g) confectioners' sugar</li>
               <li>1/3 cup (5 tablespoons + 1 teaspoon, 74g) melted butter</li>
               <li>1/8 teaspoon salt</li>
             </ul>
           </div>
-          <div id='filling'>Filling</br>
+          <div id='filling'>Filling<br>
             <ul>
               <li>2 cups (454g, 2 large packages) cream cheese, at room temperature</li>
               <li>2 large eggs, at room temperature</li>

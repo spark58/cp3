@@ -4,10 +4,10 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div id="content">
       <p id='hi'>
-        Welcome to SY's Recipe</br>
+        Welcome to SY's Recipe<br>
         Click on the link below to check out my recipes!
       </p>
-      <router-link to="/RC1">Cheesecake</router-link></br>
+      <router-link to="/RC1">Cheesecake</router-link><br>
       <router-link to="/RC2">Fluffy French Toast</router-link>
     </div>
   </div>
