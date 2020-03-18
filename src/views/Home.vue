@@ -3,7 +3,7 @@
     <img width="15%" alt="cooking" src="../assets/cake-pop.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div id="content">
-      <p>
+      <p id='hi'>
         Welcome to SY's Recipe</br>
         Click on the link below to check out my recipes!
       </p>
@@ -26,7 +26,7 @@
 // </script>
 
 <style>
-p {
+#hi {
   font-size: 21px;
 }
 
